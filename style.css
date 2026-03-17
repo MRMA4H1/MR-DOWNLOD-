@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI';
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Glass UI */
+.container {
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  animation: fadeIn 1s ease;
+  width: 320px;
+}
+
+/* Title */
+h1 {
+  color: #00ffc3;
+  font-size: 32px;
+}
+
+.highlight {
+  color: #ff0055;
+  font-weight: bold;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00ffc3, #00aaff);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Result */
+#result a {
+  display: block;
+  margin-top: 10px;
+  color: #00ffc3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1;}
+}
